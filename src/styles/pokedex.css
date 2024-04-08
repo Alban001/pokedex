@@ -1,0 +1,114 @@
+.pokedex-container{
+     background-color: var(--white-bg);
+     
+    .pokedex-logo{
+        width: 100%;
+        height: auto;
+        background-color: red;
+        img{
+            width: 15%;
+            height: auto; 
+            margin-left: 5rem;
+            margin-top: 3rem;
+        }
+        .black-sector{
+            background-color: black;
+            width:100%;
+            height:2.5rem;
+        }
+    }
+    p>span{
+        color: red;
+        font-weight: bold;
+        font-size:x-large;
+        padding-left: 3rem;
+
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        input{
+            border: none;
+            height: 2rem;
+            margin: 0.3rem;
+            width: 20rem;
+            background-color: rgba(255, 157, 0, 0.556);
+        }
+        button{
+            border: none;
+            height: 2.3rem;
+            border-radius: 0.4rem;
+            margin: 0.3rem;
+        }
+        button:hover{
+            background-color: rgba(255, 157, 0, 0.556);
+        }
+        select{
+            border: none;
+            height: 2.3rem;
+            border-radius: 0.4rem;
+            margin: 0.3rem;
+        }
+        select:hover{
+            background-color: rgba(255, 157, 0, 0.556);
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 750px){
+    .pokedex-container{
+        width: 100%;
+        p{
+                text-align: center;
+                font-size: small;
+        }
+        p>span{
+            color: red;
+            font-weight: bold;
+            font-size:small;
+            padding-left: 1rem;
+            display: block;
+    
+        }
+        .input-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            input{
+                border: none;
+                height: 1rem;
+                margin: 0.3rem;
+                width: 10rem;
+                background-color: rgba(255, 157, 0, 0.556);
+            }
+            button{
+                border: none;
+                height: 1rem;
+                border-radius: 0.4rem;
+                margin: 0.3rem;
+            }
+            button:hover{
+                background-color: rgba(255, 157, 0, 0.556);
+            }
+            select{
+                border: none;
+                height: 1rem;
+                border-radius: 0.4rem;
+                margin: 0.3rem;
+                font-size: small;
+                margin-left: 1rem;
+            }
+            select:hover{
+                background-color: rgba(255, 157, 0, 0.556);
+            }
+        }
+    }
+    
+}

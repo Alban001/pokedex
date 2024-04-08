@@ -1,0 +1,211 @@
+.card {
+    width: 70%;
+
+    
+    border-radius: 0.7rem;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 60%;
+        transform: translateX(34%);
+        margin-top: 1rem;
+        position: absolute;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .name-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white-bg);
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-top: 9rem;
+
+        h2 {
+            text-align: center;
+            margin-top: 2rem;
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 1.9rem;
+        }
+
+        li {
+
+            display: inline;
+
+        }
+
+        li:not(:nth-child(1))::before {
+            content: '/';
+        }
+
+    }
+
+    hr {
+        width: 100%;
+        background-color: var(--white-bg);
+        height: 0.2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .feature-container {
+
+        width: 100%;
+        height: auto;
+        background-color: var(--white-bg);
+
+        ul {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            gap: 0.3rem;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                width: 5rem;
+            }
+
+            .item--stat {
+                color: rgba(0, 0, 0, 0.573);
+            }
+
+            .item--base {
+                font-size: large;
+                font-weight: 400;
+                color: brown;
+            }
+        }
+    }
+}
+
+.color--poison {
+    color: rgb(70, 113, 27);
+}
+.color--grass {
+    color: rgb(36, 61, 11);
+}
+
+
+.color--ground {
+
+    color: rgba(77, 80, 75, 0.463);
+
+    background-color: rgba(77, 80, 75, 0.463);
+}
+
+.color--fire {
+
+    color: rgba(253, 160, 21, 0.963);
+}
+
+.color--water {
+    color: rgb(39, 119, 224);
+
+}
+
+
+.bg--water {
+    background: linear-gradient(to bottom, #64dbe6, #1629ff);
+}
+
+.bg--fire {
+    background: linear-gradient(to bottom, #f0c206, #c24d04);
+}
+
+.bg--grass {
+    background: linear-gradient(to bottom, #021002, #a1a9f8);
+}
+
+.bg--ground {
+    background: linear-gradient(to bottom, #30002d, #ff00bb);
+}
+.bg--bug {
+    background: rgba(193, 44, 206, 0.463);
+}
+
+/* color section  */
+.color--bug {
+    color: linear-gradient(to bottom, #73e664, #008b07);
+}
+.bg--dark {
+    background: #010101d7;
+}
+.color--dark {
+    color: rgba(1, 1, 1, 0.845);
+}
+.bg--rock {
+    background: linear-gradient(to bottom, #000000, #c6c7ca);
+}
+.color--rock {
+    color: rgba(99, 95, 95, 0.845);
+}
+.color--fighting {
+    color: rgba(41, 1, 15, 0.463);
+}
+/* border section  */
+.border--rock{
+    border: 0.7rem solid rgba(51, 48, 48, 0.845);
+}
+.border--fire {
+    border: 0.7rem solid rgba(200, 153, 83, 0.963);
+}
+.border--bug {
+    border: 0.7rem solid rgba(193, 44, 206, 0.463);
+}
+.border--ground {
+    border: 0.7rem solid rgba(88, 94, 85, 0.463);
+}
+.border--fighting {
+    border: 0.7rem solid rgba(41, 1, 15, 0.463);
+}
+.border--grass {
+    border: 0.7rem solid rgb(59, 73, 44);
+}
+.border--water {
+    border: 0.7rem solid rgb(84, 84, 209);
+}
+.border--normal {
+    border: 0.7rem solid rgb(209, 88, 58);
+}
+
+.bg--normal {
+    background: linear-gradient(to bottom, #e66464, #ff2be3);
+}
+.bg--fighting {
+    background:linear-gradient(to bottom, #64dbe6, #9198e5);
+}
+.color--normal {
+    color: rgb(232, 50, 4);
+}
+.bg--electric{
+    background: linear-gradient(to bottom, #310cff, #9198e5);
+}
+.color--normal {
+    color: linear-gradient(to bottom, #8ee601, #9198e5);
+}
+.border--electric {
+    border: 0.7rem solid rgba(5, 56, 62, 0.463);
+}
+
+@media only screen and (max-width: 750px){
+   .pokeCard{
+        width: 50%;
+        
+   }
+    
+
+}

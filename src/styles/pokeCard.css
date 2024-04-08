@@ -1,0 +1,40 @@
+.container-ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    li{
+        background-color: rgba(0, 0, 0, 0.266);
+        padding: 0.5rem;
+        cursor: pointer;
+
+    }
+    li:hover{
+        background-color: rgba(0, 0, 0, 0.596);
+    }
+}
+.container-ul .active-page{
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+ .pokeCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+
+}
+
+@media only screen and (max-width: 750px) {
+    .container-ul{
+        font-size: x-small;
+        gap:0.9rem;
+        margin-right: 4rem;
+    }
+    .pokeCard{
+        display: grid;
+        grid-template-columns: 1fr ;
+        place-items: center;
+      
+    }
+}
