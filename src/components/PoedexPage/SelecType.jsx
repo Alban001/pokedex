@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import useFetch from '../../hooks/useFetch.js' 
-import '../../styles/selectedType.css'
 
 const SelecType = ({setTypeSelected}) => {
 
